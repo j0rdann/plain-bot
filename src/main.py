@@ -1,7 +1,7 @@
 # bot code, to run use this: pipenv run python main.py
 
 # Installing packages
-from twitchAPI.twitch import Twitch
+from twitchio.ext import commands
 import os
 
 # Test function, just to get it working
