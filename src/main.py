@@ -1,18 +1,11 @@
-# bot code, to run use this: pipenv run python main.py
+# runs the bot code, to run use this inside the src directory: pipenv run python main.py
 
-# Installing packages
-from twitchio.ext import commands
-import os
+# Importing Bot Class in bot.py
+from bot import Bot
 
-# Test function, just to get it working
-def test():
-    print(os.environ.get("BOT_PREFIX"))
-    print("Hi my prefix is: " , os.environ.get("BOT_PREFIX"))
-
-# Main function, everything runs through here
 def main():
-    test()
+    plain_bot = Bot()
+    plain_bot.run()
 
-# Safety function
 if __name__ == "__main__":
     main()
